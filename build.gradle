@@ -24,19 +24,6 @@ allprojects {
         maven { url 'https://download.01.org/crosswalk/releases/crosswalk/android/maven2' }
     }
 }
-signingConfigs {
-        release {
-            storeFile file('debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
-        }
-        debug {
-            storeFile file('debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
-            }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
